@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Integration with RD Station</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Integração de Dados com RD Station</h1>
+        <p>Use o botão abaixo para integrar os dados do banco de dados local com o RD Station Marketing.</p>
+        
+        <form action="/integrate" method="post">
+            <button type="submit" class="btn btn-primary">Integrar Dados</button>
+        </form>
+
+        <div class="mt-4">
+            <h3>Status da Integração</h3>
+            <p>{{ message }}</p>
+        </div>
+    </div>
+</body>
+</html>
